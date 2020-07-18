@@ -1,0 +1,152 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# Date created = 17:01:03  February 25, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		gyztankwar_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY vgatest
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:01:03  FEBRUARY 25, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SEARCH_PATH "d:\\tankwar"
+set_location_assignment PIN_AB12 -to rst_n
+set_global_assignment -name IP_SEARCH_PATHS "d:\\tankwar"
+set_location_assignment PIN_F14 -to blue[3]
+set_location_assignment PIN_H13 -to blue[2]
+set_location_assignment PIN_G13 -to blue[1]
+set_location_assignment PIN_B13 -to blue[0]
+set_location_assignment PIN_AF14 -to clk_50m
+set_location_assignment PIN_G10 -to green[3]
+set_location_assignment PIN_H12 -to green[2]
+set_location_assignment PIN_J10 -to green[1]
+set_location_assignment PIN_J9 -to green[0]
+set_location_assignment PIN_B11 -to hsync
+set_location_assignment PIN_B12 -to red[3]
+set_location_assignment PIN_E13 -to red[2]
+set_location_assignment PIN_C13 -to red[1]
+set_location_assignment PIN_A13 -to red[0]
+set_location_assignment PIN_D11 -to vsync
+set_location_assignment PIN_J14 -to blue[7]
+set_location_assignment PIN_G15 -to blue[6]
+set_location_assignment PIN_F15 -to blue[5]
+set_location_assignment PIN_H14 -to blue[4]
+set_location_assignment PIN_E11 -to green[7]
+set_location_assignment PIN_F11 -to green[6]
+set_location_assignment PIN_G12 -to green[5]
+set_location_assignment PIN_G11 -to green[4]
+set_location_assignment PIN_F13 -to red[7]
+set_location_assignment PIN_E12 -to red[6]
+set_location_assignment PIN_D12 -to red[5]
+set_location_assignment PIN_C12 -to red[4]
+set_location_assignment PIN_A11 -to dac_clk
+set_location_assignment PIN_F10 -to dac_blank
+set_location_assignment PIN_C10 -to dac_sync
+set_global_assignment -name VERILOG_TEST_BENCH_FILE simulation/modelsim/vgatest.vt
+set_global_assignment -name SOURCE_FILE pll_clock.cmp
+set_global_assignment -name VERILOG_FILE pll_clock/pll_clock_0002.v -library pll_clock
+set_global_assignment -name VERILOG_FILE pll_clock.v -library pll_clock
+set_global_assignment -name VERILOG_FILE vgatest.v
+set_global_assignment -name QIP_FILE pll_clock.qip
+set_global_assignment -name SIP_FILE pll_clock.sip
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH vgatest_vlg_tst -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME vgatest_vlg_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id vgatest_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME vgatest_vlg_tst -section_id vgatest_vlg_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/vgatest.vt -section_id vgatest_vlg_tst
+set_location_assignment PIN_Y16 -to direction_ori[3]
+set_location_assignment PIN_W15 -to direction_ori[2]
+set_location_assignment PIN_AA15 -to direction_ori[1]
+set_location_assignment PIN_AA14 -to direction_ori[0]
+set_global_assignment -name VERILOG_FILE RanGen.v
+set_location_assignment PIN_AE12 -to shoot
+set_global_assignment -name VERILOG_FILE mybullet.v
+set_global_assignment -name VERILOG_FILE enermy1bullet.v
+set_global_assignment -name VERILOG_FILE enermy2bullet.v
+set_location_assignment PIN_Y21 -to live_debug[9]
+set_location_assignment PIN_W21 -to live_debug[8]
+set_location_assignment PIN_W20 -to live_debug[7]
+set_location_assignment PIN_Y19 -to live_debug[6]
+set_location_assignment PIN_W19 -to live_debug[5]
+set_location_assignment PIN_W17 -to live_debug[4]
+set_location_assignment PIN_V18 -to live_debug[3]
+set_location_assignment PIN_V17 -to live_debug[2]
+set_location_assignment PIN_W16 -to live_debug[1]
+set_location_assignment PIN_V16 -to live_debug[0]
+set_global_assignment -name VERILOG_FILE segment.v
+set_location_assignment PIN_AH28 -to seg0[6]
+set_location_assignment PIN_AG28 -to seg0[5]
+set_location_assignment PIN_AF28 -to seg0[4]
+set_location_assignment PIN_AG27 -to seg0[3]
+set_location_assignment PIN_AE28 -to seg0[2]
+set_location_assignment PIN_AE27 -to seg0[1]
+set_location_assignment PIN_AE26 -to seg0[0]
+set_global_assignment -name QIP_FILE romtest.qip
+set_location_assignment PIN_AD27 -to seg1[6]
+set_location_assignment PIN_AF30 -to seg1[5]
+set_location_assignment PIN_AF29 -to seg1[4]
+set_location_assignment PIN_AG30 -to seg1[3]
+set_location_assignment PIN_AH30 -to seg1[2]
+set_location_assignment PIN_AH29 -to seg1[1]
+set_location_assignment PIN_AJ29 -to seg1[0]
+set_location_assignment PIN_AC30 -to seg2[6]
+set_location_assignment PIN_AC29 -to seg2[5]
+set_location_assignment PIN_AD30 -to seg2[4]
+set_location_assignment PIN_AC28 -to seg2[3]
+set_location_assignment PIN_AD29 -to seg2[2]
+set_location_assignment PIN_AE29 -to seg2[1]
+set_location_assignment PIN_AB23 -to seg2[0]
+set_location_assignment PIN_AB22 -to seg3[6]
+set_location_assignment PIN_AB25 -to seg3[5]
+set_location_assignment PIN_AB28 -to seg3[4]
+set_location_assignment PIN_AC25 -to seg3[3]
+set_location_assignment PIN_AD25 -to seg3[2]
+set_location_assignment PIN_AC27 -to seg3[1]
+set_location_assignment PIN_AD26 -to seg3[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

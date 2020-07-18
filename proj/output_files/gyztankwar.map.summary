@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sat Mar 30 17:59:19 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : gyztankwar
+Top-level Entity Name : vgatest
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 486
+Total pins : 110
+Total virtual pins : 0
+Total block memory bits : 480,000
+Total DSP Blocks : 11
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

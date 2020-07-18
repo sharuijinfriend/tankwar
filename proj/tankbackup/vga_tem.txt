@@ -1,0 +1,87 @@
+			if( (x_mo == tank_x[(6*i)+:6]) && (y_mo==tank_y[(6*i)+:6]))
+				begin
+					j=1;
+					/*
+					case(tank_direction[(2*i)+:2])
+						2'b00:	begin //up
+									if((x_remainder>=4'd4 && x_remainder<=4'd5 && y_remainder<=4'd3) || (x_remainder>=4'd2 && x_remainder<=4'd7 && y_remainder<=4'd9 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+								
+						2'b01:	begin //down
+									if((x_remainder>=4'd4 && x_remainder<=4'd5 && y_remainder>=4'd6 && y_remainder<=4'd9) || (x_remainder>=4'd2 && x_remainder<=4'd7 && y_remainder<=4'd5 ))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						2'b10:	begin //left
+									if((x_remainder>=4'd4 && x_remainder<=4'd9 && y_remainder>=4'd2 && y_remainder<=4'd7) || (x_remainder>=4'd0 && x_remainder<=4'd3 && y_remainder<=4'd5 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						2'b11:	begin //right
+									if((x_remainder>=4'd0 && x_remainder<=4'd5 && y_remainder>=4'd2 && y_remainder<=4'd7) || (x_remainder>=4'd6 && x_remainder<=4'd9 && y_remainder<=4'd5 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						default: begin
+										red_reg={8{1'b1}};
+										green_reg=8'b0;
+										blue_reg=8'b0;
+									end			
+					endcase
+					*/
+					case(tank_direction[8+:2])
+						2'b00:	begin //up
+									if((x_remainder>=4'd4 && x_remainder<=4'd5 && y_remainder<=4'd3) || (x_remainder>=4'd2 && x_remainder<=4'd7 && y_remainder<=4'd9 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+								
+						2'b01:	begin //down
+									if((x_remainder>=4'd4 && x_remainder<=4'd5 && y_remainder>=4'd6 && y_remainder<=4'd9) || (x_remainder>=4'd2 && x_remainder<=4'd7 && y_remainder<=4'd5 ))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						2'b10:	begin //left
+									if((x_remainder>=4'd4 && x_remainder<=4'd9 && y_remainder>=4'd2 && y_remainder<=4'd7) || (x_remainder>=4'd0 && x_remainder<=4'd3 && y_remainder<=4'd5 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						2'b11:	begin //right
+									if((x_remainder>=4'd0 && x_remainder<=4'd5 && y_remainder>=4'd2 && y_remainder<=4'd7) || (x_remainder>=4'd6 && x_remainder<=4'd9 && y_remainder<=4'd5 && y_remainder>=4'd4))
+										begin
+											red_reg=8'b0;
+											green_reg=8'b0;
+											blue_reg={8{1'b1}};
+										end
+								end
+						default: begin
+										red_reg={8{1'b1}};
+										green_reg=8'b0;
+										blue_reg=8'b0;
+									end			
+					endcase
+					
+				end

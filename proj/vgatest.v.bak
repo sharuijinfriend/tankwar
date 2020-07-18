@@ -1,0 +1,67 @@
+module vgatest(
+input clk,
+input rst_n,
+output reg [3:0] red,
+output reg [3:0] green,
+output reg [3:0] blue,
+output reg hsync,
+output reg vsync
+);
+//-------------------------------------------------//
+//          扫描参数的设定 640*480 60Hz VGA
+//-------------------------------------------------//
+/*
+back porch  48    33
+sync pulse  96     2
+front porch 16    10
+*/
+reg [9:0] x_cnt;
+reg [9:0] y_cnt;
+
+wire [9:0] x_pos
+wire [8:0] y_pos
+
+parameter H_SYNC_END   = 96;     //行同步脉冲结束时间
+parameter V_SYNC_END   = 2;      //列同步脉冲结束时间
+parameter H_SYNC_TOTAL = 800;    //行扫描总像素单位
+parameter V_SYNC_TOTAL = 525;    //列扫描总像素单位
+parameter H_SHOW_START = 144;    //显示区行开始像素点
+parameter V_SHOW_START = 35;     //显示区列开始像素点
+	
+//水平扫描
+always@(posedge clk_25M or negedge RSTn)    
+	if(~rst_n) x_cnt <= 'd0;
+	else if (x_cnt == H_SYNC_TOTAL) x_cnt <= 'd0;
+	else  x_cnt <= x_cnt + 1'b1;
+
+//垂直扫描
+always@(posedge clk_25M or negedge RSTn)    
+	if(~rst_n) y_cnt <= 'd0;
+	else if (y_cnt == V_SYNC_TOTAL) y_cnt <= 'd0;
+	else if (x_cnt == H_SYNC_TOTAL) y_cnt <= y_cnt + 1'b1;
+	else y_cnt <= y_cnt;
+
+//H_SYNC信号
+always@(posedge clk_25M or negedge RSTn)    
+	if(~rst_n) hsync <= 'd0;
+	else if (x_cnt == 'd0) hsync <= 1'b0;
+	else if (x_cnt == H_SYNC_END) hsync <= 1'b1;
+	else  hsync <= hsync;
+
+//V_SYNC信号
+always@(posedge clk_25M or negedge RSTn)    
+	if(~rst_n) vsync <= 'd0;
+	else if (y_cnt == 'd0) vsync <= 1'b0;
+	else if (y_cnt == V_SYNC_END) vsync <= 1'b1;
+	else  vsync <= vsync;   
+
+assign x_pos = x_cnt - H_SHOW_START;
+assign y_pos = y_cnt - V_SHOW_START;
+
+initial 
+	begin
+		red=4'b1111;
+		green=4'b0000;
+		blue=4'b0;
+	end
+endmodule 

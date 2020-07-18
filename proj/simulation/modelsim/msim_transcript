@@ -1,0 +1,316 @@
+# Reading C:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do gyztankwar_run_msim_rtl_verilog.do
+# if ![file isdirectory gyztankwar_iputf_libs] {
+# 	file mkdir gyztankwar_iputf_libs
+# }
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/tankwar/pll_clock_sim/pll_clock.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 D:/tankwar/pll_clock_sim/pll_clock.vo 
+# -- Compiling module pll_clock
+# 
+# Top level modules:
+# 	pll_clock
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/tankwar {D:/tankwar/vgatest.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar" D:/tankwar/vgatest.v 
+# -- Compiling module vgatest
+# 
+# Top level modules:
+# 	vgatest
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/tankwar {D:/tankwar/RanGen.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar" D:/tankwar/RanGen.v 
+# -- Compiling module RanGen
+# 
+# Top level modules:
+# 	RanGen
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/tankwar {D:/tankwar/mybullet.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar" D:/tankwar/mybullet.v 
+# -- Compiling module mybullet
+# 
+# Top level modules:
+# 	mybullet
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/tankwar {D:/tankwar/enermy1bullet.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar" D:/tankwar/enermy1bullet.v 
+# -- Compiling module enermy1bullet
+# 
+# Top level modules:
+# 	enermy1bullet
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/tankwar {D:/tankwar/enermy2bullet.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:51 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar" D:/tankwar/enermy2bullet.v 
+# -- Compiling module enermy2bullet
+# 
+# Top level modules:
+# 	enermy2bullet
+# End time: 12:18:51 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/tankwar/simulation/modelsim {D:/tankwar/simulation/modelsim/vgatest.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:52 on Mar 26,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/tankwar/simulation/modelsim" D:/tankwar/simulation/modelsim/vgatest.vt 
+# -- Compiling module vgatest_vlg_tst
+# 
+# Top level modules:
+# 	vgatest_vlg_tst
+# End time: 12:18:52 on Mar 26,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  vgatest_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" vgatest_vlg_tst 
+# Start time: 12:18:52 on Mar 26,2019
+# Loading work.vgatest_vlg_tst
+# Loading work.vgatest
+# Loading work.RanGen
+# Loading work.mybullet
+# Loading work.enermy1bullet
+# Loading work.enermy2bullet
+# Loading work.pll_clock
+# Loading sv_std.std
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Too few port connections. Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1 File: D:/tankwar/vgatest.v
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'direction_reg'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'bullet_exit24'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'random'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'live_debug'.
+# ** Warning: (vsim-3017) D:/tankwar/vgatest.v(690): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1/M1 File: D:/tankwar/pll_clock_sim/pll_clock.vo
+# ** Warning: (vsim-3722) D:/tankwar/vgatest.v(690): [TFMPC] - Missing connection for port 'locked'.
+# ** Warning: (vsim-3017) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Too few port connections. Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1/M1/pll_clock_altera_pll_altera_pll_i_1557 File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gyz  Hostname: GAOYUZHE  ProcessID: 4536
+#           Attempting to use alternate WLF file "./wlftfh10hb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfh10hb
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (vgatest_vlg_tst.i1.M1.pll_clock_altera_pll_altera_pll_i_1557.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = vgatest_vlg_tst.i1.M1.pll_clock_altera_pll_altera_pll_i_1557.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 200 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 2500.000000
+# Info: output_clock_low_period = 2500.000000
+# Running testbench
+do D:/tankwar/simulation/modelsim/tank.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /vgatest_vlg_tst/i1/absx32
+# add wave -noupdate /vgatest_vlg_tst/i1/absx42
+# add wave -noupdate /vgatest_vlg_tst/i1/absx43
+# add wave -noupdate /vgatest_vlg_tst/i1/absy32
+# add wave -noupdate /vgatest_vlg_tst/i1/absy42
+# add wave -noupdate /vgatest_vlg_tst/i1/absy43
+# add wave -noupdate /vgatest_vlg_tst/i1/blue
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_counter
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_direction
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_exit24
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_exit_reg
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_x
+# add wave -noupdate /vgatest_vlg_tst/i1/bullet_y
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_100m
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_200m
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_25m
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_50m
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_slow
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_slow_counter
+# add wave -noupdate /vgatest_vlg_tst/i1/dac_blank
+# add wave -noupdate /vgatest_vlg_tst/i1/dac_clk
+# add wave -noupdate /vgatest_vlg_tst/i1/dac_sync
+# add wave -noupdate /vgatest_vlg_tst/i1/direction
+# add wave -noupdate /vgatest_vlg_tst/i1/direction_ori
+# add wave -noupdate /vgatest_vlg_tst/i1/direction_reg
+# add wave -noupdate /vgatest_vlg_tst/i1/green
+# add wave -noupdate /vgatest_vlg_tst/i1/hsync
+# add wave -noupdate /vgatest_vlg_tst/i1/i
+# add wave -noupdate /vgatest_vlg_tst/i1/j
+# add wave -noupdate /vgatest_vlg_tst/i1/rst_n
+# add wave -noupdate /vgatest_vlg_tst/i1/clk_f
+# add wave -noupdate -expand /vgatest_vlg_tst/i1/bullet_exit
+# add wave -noupdate /vgatest_vlg_tst/i1/live
+# add wave -noupdate /vgatest_vlg_tst/i1/live_debug
+# add wave -noupdate /vgatest_vlg_tst/i1/rand_num
+# add wave -noupdate /vgatest_vlg_tst/i1/random
+# add wave -noupdate /vgatest_vlg_tst/i1/red
+# add wave -noupdate /vgatest_vlg_tst/i1/shoot
+# add wave -noupdate /vgatest_vlg_tst/i1/tank_direction
+# add wave -noupdate /vgatest_vlg_tst/i1/tank_exit
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[49]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[48]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[47]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[46]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[45]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[44]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[43]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[42]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[41]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_x[40]}
+# add wave -noupdate /vgatest_vlg_tst/i1/tank_x
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[49]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[48]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[47]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[46]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[45]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[44]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[43]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[42]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[41]}
+# add wave -noupdate {/vgatest_vlg_tst/i1/tank_y[40]}
+# add wave -noupdate /vgatest_vlg_tst/i1/tank_y
+# add wave -noupdate /vgatest_vlg_tst/i1/vsync
+# add wave -noupdate -radix ufixed /vgatest_vlg_tst/i1/x_cnt
+# add wave -noupdate -radix ufixed /vgatest_vlg_tst/i1/x_pos
+# add wave -noupdate -radix ufixed /vgatest_vlg_tst/i1/y_cnt
+# add wave -noupdate -radix ufixed /vgatest_vlg_tst/i1/y_pos
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {92921844 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 275
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 0
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {0 ps} {189 us}
+# Break key hit
+# Simulation stop requested.
+restart
+# ** Warning: (vsim-3017) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Too few port connections. Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1 File: D:/tankwar/vgatest.v
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'direction_reg'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'bullet_exit24'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'random'.
+# ** Warning: (vsim-3722) D:/tankwar/simulation/modelsim/vgatest.vt(47): [TFMPC] - Missing connection for port 'live_debug'.
+# ** Warning: (vsim-3017) D:/tankwar/vgatest.v(690): [TFMPC] - Too few port connections. Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1/M1 File: D:/tankwar/pll_clock_sim/pll_clock.vo
+# ** Warning: (vsim-3722) D:/tankwar/vgatest.v(690): [TFMPC] - Missing connection for port 'locked'.
+# ** Warning: (vsim-3017) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Too few port connections. Expected 26, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /vgatest_vlg_tst/i1/M1/pll_clock_altera_pll_altera_pll_i_1557 File: /build/swbuild/SJ/nightly/18.0std/614/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'fboutclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) D:/tankwar/pll_clock_sim/pll_clock.vo(49): [TFMPC] - Missing connection for port 'zdbfbclk'.
+run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (vgatest_vlg_tst.i1.M1.pll_clock_altera_pll_altera_pll_i_1557.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = vgatest_vlg_tst.i1.M1.pll_clock_altera_pll_altera_pll_i_1557.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 200 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 2500.000000
+# Info: output_clock_low_period = 2500.000000
+# Running testbench
+# ** Note: $stop    : D:/tankwar/simulation/modelsim/vgatest.vt(73)
+#    Time: 20 ms  Iteration: 0  Instance: /vgatest_vlg_tst
+# Break in Module vgatest_vlg_tst at D:/tankwar/simulation/modelsim/vgatest.vt line 73
+# altEditor error: invalid command name "external_editor"
+run
+run
+run
+run -continue
+run -all
+# End time: 19:55:58 on Mar 26,2019, Elapsed time: 7:37:06
+# Errors: 1, Warnings: 60

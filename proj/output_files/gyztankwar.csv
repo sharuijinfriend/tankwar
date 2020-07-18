@@ -1,0 +1,49 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+# File: D:\tankwar\output_files\gyztankwar.csv
+# Generated on: Wed Feb 27 10:32:11 2019
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Transceiver Analog Settings Protocol,VCCR_GXB/VCCT_GXB Voltage,Transceiver I/O Pin Termination,Transceiver Dedicated Refclk Pin Termination,Transmitter Common Mode Driver Voltage,Transmitter Slew Rate Control,Transmitter Differential Output Voltage,Receiver Buffer Common Mode Voltage,Strict Preservation
+blue[7],Output,PIN_J14,8A,B8A_N0,PIN_AH2,,,,,,,,,,,,,,
+blue[6],Output,PIN_G15,8A,B8A_N0,PIN_D12,,,,,,,,,,,,,,
+blue[5],Output,PIN_F15,8A,B8A_N0,PIN_E4,,,,,,,,,,,,,,
+blue[4],Output,PIN_H14,8A,B8A_N0,PIN_AH29,,,,,,,,,,,,,,
+blue[3],Output,PIN_F14,8A,B8A_N0,PIN_F14,2.5 V,,,,,,,,,,,,,
+blue[2],Output,PIN_H13,8A,B8A_N0,PIN_H13,2.5 V,,,,,,,,,,,,,
+blue[1],Output,PIN_G13,8A,B8A_N0,PIN_G13,2.5 V,,,,,,,,,,,,,
+blue[0],Output,PIN_B13,8A,B8A_N0,PIN_B13,2.5 V,,,,,,,,,,,,,
+clk_50m,Input,PIN_AF14,3B,B3B_N0,PIN_AF14,2.5 V,,,,,,,,,,,,,
+green[7],Output,PIN_E11,8A,B8A_N0,PIN_AE23,,,,,,,,,,,,,,
+green[6],Output,PIN_F11,8A,B8A_N0,PIN_Y23,,,,,,,,,,,,,,
+green[5],Output,PIN_G12,8A,B8A_N0,PIN_AH17,,,,,,,,,,,,,,
+green[4],Output,PIN_G11,8A,B8A_N0,PIN_AH27,,,,,,,,,,,,,,
+green[3],Output,PIN_G10,8A,B8A_N0,PIN_G10,2.5 V,,,,,,,,,,,,,
+green[2],Output,PIN_H12,8A,B8A_N0,PIN_H12,2.5 V,,,,,,,,,,,,,
+green[1],Output,PIN_J10,8A,B8A_N0,PIN_J10,2.5 V,,,,,,,,,,,,,
+green[0],Output,PIN_J9,8A,B8A_N0,PIN_J9,2.5 V,,,,,,,,,,,,,
+hsync,Output,PIN_B11,8A,B8A_N0,PIN_B11,2.5 V,,,,,,,,,,,,,
+red[7],Output,PIN_F13,8A,B8A_N0,PIN_AJ27,,,,,,,,,,,,,,
+red[6],Output,PIN_E12,8A,B8A_N0,PIN_AE26,,,,,,,,,,,,,,
+red[5],Output,PIN_D12,8A,B8A_N0,PIN_C5,,,,,,,,,,,,,,
+red[4],Output,PIN_C12,8A,B8A_N0,PIN_AC29,,,,,,,,,,,,,,
+red[3],Output,PIN_B12,8A,B8A_N0,PIN_B12,2.5 V,,,,,,,,,,,,,
+red[2],Output,PIN_E13,8A,B8A_N0,PIN_E13,2.5 V,,,,,,,,,,,,,
+red[1],Output,PIN_C13,8A,B8A_N0,PIN_C13,2.5 V,,,,,,,,,,,,,
+red[0],Output,PIN_A13,8A,B8A_N0,PIN_A13,2.5 V,,,,,,,,,,,,,
+rst_n,Input,PIN_AB12,3A,B3A_N0,PIN_AB12,2.5 V,,,,,,,,,,,,,
+vsync,Output,PIN_D11,8A,B8A_N0,PIN_D11,2.5 V,,,,,,,,,,,,,
